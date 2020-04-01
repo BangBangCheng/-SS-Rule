@@ -7,6 +7,8 @@ skip-proxy = localhost, *.local, captive.apple.com, 0.0.0.0/8, 10.0.0.0/8, 17.0.
 bypass-system = true
 ipv6 = false
 
+
+[Rule]
 # REJECT-TINYGIF 策略
 
 ## Baidu
@@ -704,7 +706,6 @@ DOMAIN-SUFFIX,pstatp.com,Proxy
 DOMAIN-SUFFIX,tiktokv.com,Proxy
 
 #结束
-[Rule]
 # Apple
 DOMAIN,safebrowsing.googleapis.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
 DOMAIN,safebrowsing.urlsec.qq.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
